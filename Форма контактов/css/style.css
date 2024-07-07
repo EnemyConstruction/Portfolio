@@ -1,0 +1,102 @@
+body {
+    font-family: "Playfair Display", serif;
+    color: #2D2829;
+    background-color: #FBEBEA;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0;
+}
+
+.main-content {
+    width: 1140px;
+    padding: 0 70px;
+    margin: 0 auto;
+}
+
+.contacts {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-content {
+    width: 340px;
+    padding-top: 20px;
+}
+
+.contacts-map {
+    width: 760px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts h2 {
+    font-size: 40px;
+    line-height: 66px;
+    margin: 0;
+    margin-bottom: 45px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+    .contact-item h3 {
+        font-size: 20px;
+        line-height: 27px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .contact-item address {
+        font-style: normal;
+    }
+
+    .contact-item a {
+        color: #2D2829;
+        text-decoration: none;
+    }
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.social-item {
+    margin-right: 25px;
+}
+
+    .social-item a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+    }
+
+        .social-item a:hover {
+            opacity: 0.7;
+        }
+
+        .social-item a:active {
+            opacity: 0.5;
+        }
+
+.contact-item a:hover {
+    color: rgba(45, 40, 41, 0.7);
+}
+
+.contact-item a:active {
+    color: rgba(45, 40, 41, 0.5);
+}

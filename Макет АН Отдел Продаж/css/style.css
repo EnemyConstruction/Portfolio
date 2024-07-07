@@ -1,0 +1,535 @@
+@font-face {
+    font-family: "SF UI Text";
+    src: local('SF UI Text'), local('SFUIText-Regular'),
+         url('../fonts/SFUIText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    src: local('SF UI Text'), local('SFUIText-Medium'),
+        url('../fonts/SFUIText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    src: local('SF UI Text'), local('SFUIText-Semibold'),
+        url('../fonts/SFUIText-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    src: local('SF UI Text'), local('SFUIText-Heavy'),
+        url('../fonts/SFUIText-Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    font-family: "SF UI Text", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 29px;
+    color: #000000;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+button{
+    font-family: "SF UI Text", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    font-style: normal;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+.main-header{
+    background-color: #F7FAFD;
+    margin-bottom: 120px;
+}
+
+.header-content-container{
+    width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 247px;
+    text-decoration: none;
+    color: #2B2B2B;
+    margin-right: 120px;
+}
+
+.logo-container:hover{
+    transform: scale(1.02);
+}
+
+.logo-container p{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.main-list-navigation{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 514px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 143px;
+}
+
+.main-list-navigation li{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.main-list-navigation li:hover{
+    opacity: 0.7;
+}
+
+.main-list-navigation li:active{
+    opacity: 0.5;
+}
+
+.phone-calling{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.phone-calling.head{
+    width: 201px;
+    margin-right: 37px;
+}
+
+.phone-calling.head::before{
+    content: '';
+    background-image: url("../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 19px;
+    margin-right: 10px;
+}
+
+.phone-calling:hover{
+    transform: scale(1.02);
+}
+
+.call-order{
+    width: 158px;
+    background-color: transparent;
+    font-size: 15px;
+    color: #207FF1;
+    padding: 11px 18px;
+    border: 1px solid #207FF1;
+    border-radius: 12px; 
+}
+
+.section-lead{
+    width: 1420px;
+    margin: 0 auto;
+    margin-bottom: 116px;
+}
+
+.lead-text-container{
+    width: 688px;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.lead-text-container p{
+    width: 450px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.lead-text-container a{
+    display: block;
+    width: 299px;
+    color: #fff;
+    background-color: #207FF1;
+    border-radius: 15px;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.beatiful-view{
+    background-image: url("../img/beatiful-view-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 750px;
+}
+
+.advantages{
+    background-color: #F1F6FC;
+}
+
+.advantage-content-container{
+    padding-top: 120px;
+    padding-bottom: 127px;
+    width: 1420px;
+    margin: 0 auto;
+}
+
+.advantage-content-container .text-container{
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.advantage-content-container .text-container h2{
+    position: relative;
+    width: 547px;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 53px;
+    margin: 0;
+    margin-right: 178px;
+    padding-bottom: 30px;
+}
+
+.advantage-content-container .text-container h2:after{
+    position: absolute;
+    width: 105px;
+    height: 3px;
+    background-color: #207FF1;
+    content: '';
+    left: 0;
+    bottom: 0;
+}
+
+.advantage-content-container .text-container p{
+    width: 525px;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.advantages-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantage-card{
+    width: 272px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 40px 30px;
+}
+
+.advantage-card h3{
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 45px;
+}
+
+.advantage-card h3 span{   
+    font-size: 54px;
+    line-height: 45px;
+    color: #207FF1;
+}
+
+.advantage-card p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #767676;
+}
+
+.sale-offer{
+    background-image: url("../img/sale-offer-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 673px;
+}
+
+.sale-offer .content-container{
+    width: 1420px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.sale-offer .content-container .text-container{
+    width: 378px;
+    padding: 120px 0;
+}
+
+.sale-offer .content-container .text-container h2{
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 45px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+.sale-offer .content-container .text-container p{
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.sale-offer .content-container .text-container form{
+    width: 345px;
+    margin-top: 100px;
+}
+
+.sale-offer .content-container .text-container form input[type="tel"]{
+    display: block;
+    font-family: "SF UI Text", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 17px 21px;
+    border-radius: 15px;
+    border: 0px;
+    margin-bottom: 10px;
+}
+
+.sale-offer .content-container .text-container form input[type="submit"]{
+    display: block;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    width: 100%;
+    background-color: #207FF1;
+    border: 0px;
+    padding: 18px 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.achivements{
+    background-color: #F1F6FC;
+}
+
+.achivements .content-container{
+    width: 1420px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.achivements .content-container h2{
+    position: relative;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 53px;
+    margin: 0;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.achivements .content-container h2:after{
+    position: absolute;
+    width: 105px;
+    height: 3px;
+    background-color: #207FF1;
+    content: '';
+    left: 0;
+    bottom: 0;
+}
+
+.achive-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.achive-card{
+    width: 393px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.achive-card h3{
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.achive-card p{
+    font-size: 15px;
+    line-height: 23px;
+    color: #767676;
+    margin-bottom: 43px;
+}
+
+.achive-card .wrap-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achive-card .wrap-container time{
+    font-size: 15px;
+    line-height: 23px;
+    color: #767676;
+}
+
+.achive-card .wrap-container .achive-link{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 18px;
+    color: #207FF1;
+    padding: 6px 22px;
+    text-align: center;
+    background-color: #F1F6FC;
+    border-radius: 20px;
+}
+
+.achive-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    transition: ease-in-out 0.2s;
+}
+
+.achive-card:hover h3{
+    color: #207FF1;
+    transition: ease-in-out 0.2s;
+}
+
+.achive-card .wrap-container .achive-link:hover{
+    color: #fff;
+    background-color: #207FF1;
+    transition: ease-in-out 0.2s;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    width: 1420px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 185px;
+}
+
+.contacts .left-column{
+    width: 200px;
+}
+
+.contacts .left-column h2{
+    position: relative;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 53px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.contacts .left-column h2:after{
+    position: absolute;
+    width: 105px;
+    height: 3px;
+    background-color: #207FF1;
+    content: '';
+    left: 0;
+    bottom: 0;
+}
+
+.contacts .left-column .phone-calling{
+    display: block;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts .left-column address{
+    margin: 0;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 50px;
+}
+
+.contacts .left-column .call-order.back{
+    color: #fff;
+    background-color: #207FF1;
+    width: 100%;
+    padding: 18px 28px;
+    margin-bottom: 30px;
+}
+
+.contacts-list{
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts-list li a{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #207FF1;
+    border-radius: 50%;
+}
+
+.contacts-list li a img{
+    vertical-align: middle;
+}
+
+.contacts-list li a:hover{
+    opacity: 0.7;
+}
+
+.contacts-list li a:active{
+    opacity: 0.5;
+}
