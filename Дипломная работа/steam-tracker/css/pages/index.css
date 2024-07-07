@@ -1,0 +1,357 @@
+html, body{
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body.lock{
+    overflow: hidden;
+}
+
+body .wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header{
+    max-width: 100%;
+    background-color: #294057;
+    margin-bottom: 80px;
+}
+
+.no-auth-header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    padding: 20px 35px;
+    margin: 0 auto;
+}
+
+.auth-button{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #325396;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.auth-button:hover{
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+    background-color: #345caa;
+    transition: ease-in-out 0.3s;
+}
+
+main{
+    width: inherit;
+    flex: 1 1 auto;
+}
+
+main section:not(.popup){
+    max-width: 1600px;
+    padding: 0 35px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+main section.go-to-auth{
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+.section-lead{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.section-lead .left--column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.section-lead h1{
+    max-width: 450px;
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+.section-lead .try-button{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #31608f; 
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.section-lead .try-button:hover{
+    transform: scale(1.02);
+    filter: contrast(120%) brightness(1.1);
+    transition: ease-in-out 0.2s;
+}
+
+.advantages-list{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.advantages-list-item{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 300px;
+}
+
+.advantages-list-item:hover{
+    transform: translateY(-5px);
+    transition: ease-in-out 0.2s;
+}
+
+.advantages-list-item p{
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.advantages-list-item img{
+    max-width: 150px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.advantages-list-item b{
+    font-size: 24px;
+    line-height: 1.2em;
+}
+
+.text-content{
+    margin-bottom: 7px;
+}
+
+.main-functions-list-item{
+    display: flex;
+    margin-bottom: 80px;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.main-functions-list-item h2{
+    margin-top: 70px;
+    max-width: 600px;
+    font-size: 36px;
+}
+
+.main-functions-list-item:nth-child(odd) img{
+    order: -1;
+}
+
+section.go-to-auth{
+    padding: 20px 0;
+    margin: 0;
+    height: 400px;
+    background-image: url("../../img/webb-dark.png");
+    background-repeat: repeat;
+}
+
+.go-to-auth .aligner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.aligner h2{
+    margin-top: 40px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.main-footer{
+    max-width: 100%;
+    padding: 20px;
+    background-color: #294057;
+}
+
+.main-footer .menu-wrapper{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.copyright{
+    color: #FFFAFA;
+    font-size: 12px;
+}
+
+.menu-wrapper .left--column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-wrapper .left--column img{
+    margin-bottom: 10px;
+}
+
+.footer-links-item{
+    font-size: 16px;
+}
+
+.footer-links-item:hover, .sub-list-item:hover{
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 5px;
+}
+
+.footer-links-item:hover{
+    text-decoration-thickness: 1.5px;
+}
+
+.sub-list-item:hover{
+    text-decoration-thickness: 1.2px;
+    text-underline-offset: 3px;
+}
+
+.footer-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-wrapper .sub-list-item{
+    margin-left: 15px;
+}
+
+.sub-list-item{
+    font-size: 14px;
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.2);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.popup--show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__content{
+    width: 350px;
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.popup__close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.popup__close::after,
+.popup__close::before{
+    content: "";
+
+    position: absolute;
+    right: 0;
+    top: 15px;
+
+    width: 20px;
+    height: 5px;
+    margin: -10px 0;
+
+    background-color: rgb(161, 161, 161);
+}
+
+.popup__close::before{
+    transform: rotate(45deg);
+}
+
+.popup__close::after{
+    transform: rotate(-45deg);
+}
+
+.popup__close:hover::before,
+.popup__close:hover::after{
+    background-color: rgba(197, 197, 197, 0.986);
+}
+
+.popup__title{
+    font-size: 24px;
+    line-height: 1.2em;
+    margin-bottom: 25px;
+}
+
+input{
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+input:last-child{
+    margin-bottom: 0;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.popup__login, .popup__password{
+    padding: 5px 10px;
+}
+
+.popup__submit{
+    text-align: center;
+    color: #fff;
+    background-color: #31608f; 
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.popup__submit:hover{
+    background-color: #2c557e;
+    transition: 0.2s ease-in-out;
+}
